@@ -10,7 +10,7 @@ $ ->
     if username.val() < 2
       shake_fields.push username
 
-    if phone.val() < 5
+    if email.val() < 5
       shake_fields.push phone
 
     if shake_fields.length > 0
