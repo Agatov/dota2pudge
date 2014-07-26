@@ -1,7 +1,7 @@
 # Bundler tasks
 require 'bundler/capistrano'
 
-set :application, "dota2pudge"
+set :application, "pudge"
 set :repository,  "git@github.com:Agatov/dota2pudge.git"
 
 set :scm, :git

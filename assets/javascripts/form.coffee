@@ -3,7 +3,6 @@ $ ->
   $('.send-form').on 'click', ->
 
     username = $('input[name=name]')
-    phone = $('input[name=phone]')
     email = $('input[name=email]')
 
     shake_fields = []
@@ -22,7 +21,6 @@ $ ->
       '/orders.json',
     {
       'order[name]': username.val(),
-      'order[phone]': phone.val(),
       'order[email]': email.val(),
     },
     (data) =>
@@ -31,7 +29,6 @@ $ ->
 
     show_thank_you()
     reachGoal 'new_order'
-#    track 'New order', {name: username.val(), phone: phone.val(), email: email.val()}
 
 
 
@@ -62,4 +59,4 @@ window.shake = (field, i) ->
 
 
 window.reachGoal = (goal) ->
-  yaCounter25569155.reachGoal goal
+  yaCounter25690082.reachGoal goal
