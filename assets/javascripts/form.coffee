@@ -11,7 +11,7 @@ $ ->
       shake_fields.push username
 
     if email.val() < 5
-      shake_fields.push phone
+      shake_fields.push email
 
     if shake_fields.length > 0
       shake_field(field) for field in shake_fields
